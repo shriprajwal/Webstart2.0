@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Song Search</title>
+   
+</head>
+<body>
+  <form id="songSearch" method="GET" action="https://www.youtube.com/results" alt="https://open.spotify.com/" onsubmit="return ;">
+    <label for="query">Enter Song Name:</label>
+    <input type="text" name="search" id="query" placeholder="e.g. Imagine Dragons" required />
+    <div class="radio-group">
+      <label><input type="radio" name="platform" value="youtube" checked /> YouTube</label>
+      <label><input type="radio" name="platform" value="spotify" /> Spotify</label>
+    </div>
+    <input type="submit" value="Search" />
+  </form>
+</body>
+</html>
+wrong

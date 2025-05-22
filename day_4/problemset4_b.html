@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Our Restaurant Menu</title>
+  <style>
+    body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fdfdfd;
+  color: #333;
+}
+
+header {
+  background-color: #a83232;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+#menu {
+  background-color: #fff5e6;
+  padding: 2rem;
+  border-top: 4px solid #a83232;
+}
+
+#menu h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.menu-item {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin: 1rem auto;
+  max-width: 600px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.menu-item h3 {
+  margin-top: 0;
+  color: #a83232;
+}
+
+#chef-video {
+  padding: 2rem;
+  background-color: #fafafa;
+  text-align: center;
+}
+
+.video-frame {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+iframe {
+  width: 100%;
+  max-width: 560px;
+  height: 315px;
+  border: none;
+  border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+  .menu-item {
+    margin: 1rem;
+  }
+
+  iframe {
+    height: 200px;
+  }
+}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Gourmet Delights</h1>
+    <p>Explore our chef-curated dishes</p>
+  </header>
+
+  <section id="menu">
+    <h2>Our Menu</h2>
+    <div class="menu-item">
+      <h3>Grilled Salmon</h3>
+      <p>Fresh Atlantic salmon grilled to perfection.</p>
+    </div>
+    <div class="menu-item">
+      <h3>Classic Margherita Pizza</h3>
+      <p>Wood-fired pizza topped with mozzarella, tomatoes, and basil.</p>
+    </div>
+    <div class="menu-item">
+      <h3>Spaghetti Carbonara</h3>
+      <p>Creamy pasta with pancetta, Parmesan, and black pepper.</p>
+    </div>
+  </section>
+
+  <section id="chef-video">
+    <h2>Watch Our Chef in Action</h2>
+    <div class="video-frame">
+      <iframe 
+        width="560px" 
+        height="315px" 
+        src="https://youtube.com/shorts/7MsXf6PleaY?si=fPHiJt3vhitwFyNQ" 
+        title="Chef Preparing a Dish" 
+        frameborder="0" 
+        allowfullscreen>
+    </iframe>  
+    </div>
+  </section>
+</body>
+</html>

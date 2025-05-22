@@ -1,3 +1,15 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100..400&display=swap');
 p{
     color: #ebfc05;
+}
+.name{
+    color: coral;
+}
+#bala{
+    color: hotpink;
+}
+
+*{
+    color: brown;
 }

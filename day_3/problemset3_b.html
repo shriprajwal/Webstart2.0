@@ -1,20 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Song Search</title>
-   
+   <STYLE>
+    body{
+         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #121212;
+    color: #fff;
+    margin: 0;
+    padding: 20px;
+  }
+    
+    h1{
+
+    }
+    form {
+            background: #006008;
+            border-radius: 20px;
+            padding-left: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-right: 0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.899);
+    }
+    input{
+      border-radius: 20px;
+    }
+    .songs-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+   .song-card {
+    background: #181818;
+    border-radius: 10px;
+    width: 280px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.7);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+   transition: transform 0.3s ease;
+  }
+  
+   </STYLE>
 </head>
 <body>
   <form id="songSearch" method="GET" action="https://www.youtube.com/results" target="_blank" >
-    <label for="query">Enter Song Name:</label>
+    <label for="query"><b>Enter Song Name:</b></label>
     <input type="text" name="search_query" placeholder="e.g. Imagine Dragons" required />
-    <div class="radio-group">
-      <label><input type="radio" name="platform" value="youtube" checked /> YouTube</label>
-    </div>
     <input type="submit" value="Search" />
   </form>
+   <h1>Top 5 Trending Songs on YouTube</h1>
+   <div class="songs-container">
+    <!-- Song 1 -->
+    <div class="song-card">
+      <img class="song-image" src="https://upload.wikimedia.org/wikipedia/en/c/c8/Luis_Fonsi_Feat._Daddy_Yankee_-_Despacito_%28Official_Single_Cover%29.png" alt="Despacito" />
+      <div class="song-info">
+        <h2 class="song-title">Despacito</h2>
+        <p class="song-artist">Luis Fonsi</p>
+        <a class="song-link" href="https://www.youtube.com/watch?v=kJQP7kiw5Fk" target="_blank">Watch on YouTube</a>
+      </div>
+    </div>
+    <!-- Song 2 -->
+    <div class="song-card">
+      <img class="song-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ8tahNbhFoltY2LGAgDK1xsj73ll0eymxPg&s" alt="Unholy - Sam Smith & Kim Petras" />
+      <div class="song-info">
+        <h2 class="song-title">Unholy</h2>
+        <p class="song-artist">Sam Smith & Kim Petras</p>
+        <a class="song-link" href="https://www.youtube.com/watch?v=Uq9gPaIzbe8" target="_blank">Watch on YouTube</a>
+      </div>
+    </div>
+  
+    <div class="song-card">
+      <img class="song-image" src="https://i.ytimg.com/vi/3tmd-ClpJxA/hqdefault.jpg" alt="Made You Look - Meghan Trainor" />
+      <div class="song-info">
+        <h2 class="song-title">Made You Look</h2>
+        <p class="song-artist">Meghan Trainor</p>
+        <a class="song-link" href="https://www.youtube.com/watch?v=3tmd-ClpJxA" target="_blank">Watch on YouTube</a>
+      </div>
+    </div>
+    <div class="song-card">
+      <img class="song-image" src="https://i.ytimg.com/vi/LPgN4EfzUrU/maxresdefault.jpg" alt="Calm Down - Rema & Selena Gomez" />
+      <div class="song-info">
+        <h2 class="song-title">Calm Down</h2>
+        <p class="song-artist">Rema & Selena Gomez</p>
+        <a class="song-link" href="https://www.youtube.com/watch?v=WcIcVapfqXw" target="_blank">Watch on YouTube</a>
+      </div>
+    </div>
+    <div class="song-card">
+      <img class="song-image" src="https://i.ytimg.com/vi/bU2EvRBUmxc/maxresdefault.jpg" alt="Bad Habit - Steve Lacy" />
+      <div class="song-info">
+        <h2 class="song-title">Bad Habit</h2>
+        <p class="song-artist">Steve Lacy</p>
+        <a class="song-link" href="https://www.youtube.com/watch?v=VF-FGf_ZZiI" target="_blank">Watch on YouTube</a>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
 
